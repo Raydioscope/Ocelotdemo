@@ -1,0 +1,77 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Users/Get",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5164
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/users",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/Get/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5164
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/users/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/Post",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5164
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/CreateUser",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/Update/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5164
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/UpdateUser/{id}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/Delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5164
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/DeleteUser/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/GetUsersByRole/{role}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5164
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/GetUsersByRole/{role}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+
+  ]
+}  
