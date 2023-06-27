@@ -10,7 +10,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/users",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Users"
     },
     {
       "DownstreamPathTemplate": "/api/Users/Get/{id}",
@@ -22,7 +23,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/users/{id}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Users"
     },
     {
       "DownstreamPathTemplate": "/api/Users/Post",
@@ -34,7 +36,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/CreateUser",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "Users"
     },
     {
       "DownstreamPathTemplate": "/api/Users/Update/{id}",
@@ -46,7 +49,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/UpdateUser/{id}",
-      "UpstreamHttpMethod": [ "PUT" ]
+      "UpstreamHttpMethod": [ "PUT" ],
+      "SwaggerKey": "Users"
     },
     {
       "DownstreamPathTemplate": "/api/Users/Delete/{id}",
@@ -58,7 +62,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/DeleteUser/{id}",
-      "UpstreamHttpMethod": [ "DELETE" ]
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "SwaggerKey": "Users"
     },
     {
       "DownstreamPathTemplate": "/api/Users/GetUsersByRole/{role}",
@@ -70,7 +75,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/GetUsersByRole/{role}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Users"
     },
 
 
@@ -84,7 +90,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/courses",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Courses"
     },
     {
       "DownstreamPathTemplate": "/api/Courses/Get/{id}",
@@ -96,7 +103,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/Courses/{id}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Courses"
     },
     {
       "DownstreamPathTemplate": "/api/Courses/Post",
@@ -108,7 +116,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/CreateCourse",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "Courses"
     },
     {
       "DownstreamPathTemplate": "/api/Courses/Update/{id}",
@@ -120,7 +129,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/UpdateCourse/{id}",
-      "UpstreamHttpMethod": [ "PUT" ]
+      "UpstreamHttpMethod": [ "PUT" ],
+      "SwaggerKey": "Courses"
     },
     {
       "DownstreamPathTemplate": "/api/Courses/Delete/{id}",
@@ -132,7 +142,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/DeleteCourse/{id}",
-      "UpstreamHttpMethod": [ "DELETE" ]
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "SwaggerKey": "Courses"
     },
     {
       "DownstreamPathTemplate": "/api/Courses/GetCoursesByInstructor/{Instructor}",
@@ -144,7 +155,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/GetCoursesByInstructor/{Instructor}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Courses"
     },
 
     {
@@ -157,7 +169,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/Enrollment",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Enrollment"
     },
     {
       "DownstreamPathTemplate": "/api/Enrollment/Get/{id}",
@@ -169,7 +182,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/Enrollment/{id}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Enrollment"
     },
     {
       "DownstreamPathTemplate": "/api/Enrollment/Post",
@@ -181,7 +195,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/CreateEnrollment",
-      "UpstreamHttpMethod": [ "POST" ]
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "Enrollment"
     },
     {
       "DownstreamPathTemplate": "/api/Enrollment/Update/{id}",
@@ -193,7 +208,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/UpdateEnrollment/{id}",
-      "UpstreamHttpMethod": [ "PUT" ]
+      "UpstreamHttpMethod": [ "PUT" ],
+      "SwaggerKey": "Enrollment"
     },
     {
       "DownstreamPathTemplate": "/api/Enrollment/Delete/{id}",
@@ -205,7 +221,8 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/DeleteEnrollment/{id}",
-      "UpstreamHttpMethod": [ "DELETE" ]
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "SwaggerKey": "Enrollment"
     },
     {
       "DownstreamPathTemplate": "/api/Enrollment/GetEnrollmentByLearner/{Learner}",
@@ -217,10 +234,49 @@
         }
       ],
       "UpstreamPathTemplate": "/gateway/GetEnrollmentByLearner/{Learner}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Enrollment"
     }
 
 
 
-  ]
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "Users",
+      "Config": [
+        {
+          "Name": "Users API",
+          "Version": "v1",
+          "Url": "http://localhost:5164/swagger/v1/swagger.json"
+        }
+      ]
+    },
+
+    {
+      "Key": "Courses",
+      "Config": [
+        {
+          "Name": "Courses API",
+          "Version": "v1",
+          "Url": "http://localhost:5091/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Enrollment",
+      "Config": [
+        {
+          "Name": "Enrollment API",
+          "Version": "v1",
+          "Url": "http://localhost:5128/swagger/v1/swagger.json"
+        }
+      ]
+    }
+
+  ],
+
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost"
+  }
 }  
