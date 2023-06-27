@@ -10,6 +10,9 @@ builder.Services.AddOcelot(builder.Configuration);
 // Add services to the container.
 builder.Services.AddRazorPages();
 
+
+
+
 var app = builder.Build();
 await app.UseOcelot();
 // Configure the HTTP request pipeline.

@@ -71,7 +71,156 @@
       ],
       "UpstreamPathTemplate": "/gateway/GetUsersByRole/{role}",
       "UpstreamHttpMethod": [ "GET" ]
+    },
+
+
+    {
+      "DownstreamPathTemplate": "/api/Courses/Get",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5091
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/courses",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Courses/Get/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5091
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Courses/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Courses/Post",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5091
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/CreateCourse",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Courses/Update/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5091
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/UpdateCourse/{id}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Courses/Delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5091
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/DeleteCourse/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Courses/GetCoursesByInstructor/{Instructor}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5091
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/GetCoursesByInstructor/{Instructor}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownstreamPathTemplate": "/api/Enrollment/Get",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5128
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Enrollment",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Enrollment/Get/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5128
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Enrollment/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Enrollment/Post",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5128
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/CreateEnrollment",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Enrollment/Update/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5128
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/UpdateEnrollment/{id}",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Enrollment/Delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5128
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/DeleteEnrollment/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Enrollment/GetEnrollmentByLearner/{Learner}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5128
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/GetEnrollmentByLearner/{Learner}",
+      "UpstreamHttpMethod": [ "GET" ]
     }
+
+
 
   ]
 }  
