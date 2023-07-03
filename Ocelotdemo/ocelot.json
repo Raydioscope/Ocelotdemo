@@ -1,6 +1,19 @@
 {
   "Routes": [
     {
+      "DownstreamPathTemplate": "/api/Auth/Login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5196
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/login",
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "Login"
+    },
+    {
       "DownstreamPathTemplate": "/api/Users/Get",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
@@ -11,7 +24,13 @@
       ],
       "UpstreamPathTemplate": "/gateway/users",
       "UpstreamHttpMethod": [ "GET" ],
-      "SwaggerKey": "Users"
+      "SwaggerKey": "Users",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer"
+      },
+      "RouteClaimsRequirement": {
+        "Role": "Admin,Learner"
+      }
     },
     {
       "DownstreamPathTemplate": "/api/Users/Get/{id}",
@@ -270,6 +289,16 @@
           "Name": "Enrollment API",
           "Version": "v1",
           "Url": "http://localhost:5128/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Login",
+      "Config": [
+        {
+          "Name": "Login API",
+          "Version": "v1",
+          "Url": "http://localhost:5196/swagger/v1/swagger.json"
         }
       ]
     }
