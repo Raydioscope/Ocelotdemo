@@ -32,7 +32,7 @@ namespace Authentication.Services
             var claims = new List<Claim>
         {
             new Claim(JwtRegisteredClaimNames.Name, user.UserID),
-            new Claim("Role", user.Role)
+            new Claim(ClaimTypes.Role, user.Role)
             //new Claim("scope", string.Join(" ", user.Scopes))
         };
 

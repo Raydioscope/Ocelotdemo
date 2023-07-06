@@ -24,13 +24,7 @@
       ],
       "UpstreamPathTemplate": "/gateway/users",
       "UpstreamHttpMethod": [ "GET" ],
-      "SwaggerKey": "Users",
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "Bearer"
-      },
-      "RouteClaimsRequirement": {
-        "Role": "Admin,Learner"
-      }
+      "SwaggerKey": "Users"
     },
     {
       "DownstreamPathTemplate": "/api/Users/Get/{id}",
